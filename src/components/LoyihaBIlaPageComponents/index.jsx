@@ -27,14 +27,14 @@ const LoyihaBIlaPageComponents = () => {
                 <p className="title red">Kirish</p>
                 <p className="desc">Assalomu alaykum, hurmatli vatandoshlar!</p>
                 <p className="desc">Siz O‘zbekistonda kitob o‘qish madaniyatini rivojlanishtirish istagidamisiz?</p>
-                <p className="desc">Balki, siz yurtimizda qiz va ayollarning ta'lim olishi va jamiyat hayotida manfaatli ishtirok</p>
+                <p className="desc">Balki, siz yurtimizda qiz va ayollarning tali olishi va jamiyat hayotida manfaatli ishtirok</p>
                 <p className="desc">etishlari uchun imkoniyatlar yaratilishi haqida qayg‘urarsiz?</p>
                 <p className="desc">Yoki siz Shayximiz Muhammad Sodiq Muhammad Yusuf rahimahullohning ilmiy meroslarini</p>
                 <p className="desc">keng ommaga yoyish yo‘llarini izlab yurgan ilm kishisidirsiz?</p>
                 <p className="desc">Balki siz shunchaki o‘zi va atrofidagilarning ham aqlan, ham ruhan o‘sishlarini</p>
                 <p className="desc">qo‘llab-quvvatlovchi tadbirkor shaxsdirsiz?</p>
                 <p className="desc">Agar shunday bo‘lsa, bu loyiha aynan SIZ UCHUN!</p>
-                <p className="desc bold">Ilmni o’ziga mash'ala tutgan Peshqadamlar Karvoni yo‘lga chiqadi va sizni o‘z safiga chaqiradi.</p>
+                <p className="desc bold">Ilmni o’ziga masala tutgan Peshqadamlar Karvoni yo‘lga chiqadi va sizni o‘z safiga chaqiradi.</p>
                 <br/><br/>
                 <p className="title red">Yo‘nalishlar</p>
                 <ol className={'bold'}>
@@ -62,7 +62,7 @@ const LoyihaBIlaPageComponents = () => {
                 <br/><br/>
                 <p className="title red">3 - yo‘nalish. Ilmiy faoliyat</p>
                 <p className="desc">Bu yo’nalish Shayx Hazratlarining asarlari asosida ilmiy faoliyat olib borishga qaratilgan bo’lib, unda quyidagicha ishtirok etish mumkin:</p>
-                <p className="desc">➡️ &nbsp; Ilmiy maqola/ma'ruzalar yozish</p>
+                <p className="desc">➡️ &nbsp; Ilmiy masala/maruzalar yozish</p>
                 <p className="desc">➡️ &nbsp; Hazratning asarlarini boshqa tillarga tarjima qilish</p>
                 <p className="desc">➡️ &nbsp; Hazratning asarlari asosida darsliklar tayyorlash</p>
                 <p className="desc">➡️ &nbsp; Seminarlar, ilmiy konferensiyalar va boshqa ilmiy tadbirlarni o‘tkazish</p>
