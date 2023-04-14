@@ -37,7 +37,7 @@ const Navbar = ({children}) => {
                             <a href={'https://youtube.com/@peshqadamkarvoni'} target={'_blank'} rel="noreferrer"><AiOutlineYoutube className={'pointer icon'} size={'26px'} /></a>
                         </div>
                     </Container.OurMessengersSection>
-                    <Container.ArizaButton className={'pointer nocopy'} onClick={()=> navigate.push('/loyiha')}>
+                    <Container.ArizaButton className={'pointer nocopy'} onClick={()=> navigate.push('/loyiha-tanishish')}>
                         <FaBook className={'icon'} />
                         <div className="line"></div>
                         <b>Loyiha bilan tanishish</b>

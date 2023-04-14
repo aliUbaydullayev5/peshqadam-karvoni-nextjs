@@ -2,8 +2,7 @@ import React from 'react'
 import Container from './style'
 import {CgPushRight} from "react-icons/cg"
 import {data} from "../../../mock/yonalishlar"
-import {useRouter} from "next/router";
-import Image from "next/image";
+import {useRouter} from "next/router"
 
 const YonalishlarCom = () => {
 

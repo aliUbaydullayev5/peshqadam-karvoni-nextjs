@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import backImg from '../../assets/png/startPageBack.png'
+import backImg from '../../assets/png/startPageBack.jpg'
 
 
 const Container = styled.div`
@@ -78,7 +78,7 @@ Container.Inset = styled.div`
 `
 Container.StartComponent = styled.div`
   height: 700px;
-  background-image: url(${backImg});
+  background-image: url(${backImg.src});
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
