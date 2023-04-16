@@ -15,9 +15,7 @@ const Navbar = ({children}) => {
         <>
             <Container>
                 <Container.Inset>
-                    <a href={'#'}>
-                        <Image src={logo} alt="" className={'pointer nocopy'} />
-                    </a>
+                    <Image src={logo} alt="" className={'pointer nocopy'} onClick={()=> navigate.push('/')} />
 
                     <Container.Input>
                         <input type="text" placeholder={'Qidirish....'} />
