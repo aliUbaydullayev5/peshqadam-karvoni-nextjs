@@ -35,7 +35,7 @@ const Footer = () => {
                             </div>
                             <div>
                                 <h3>Telefon</h3>
-                                <p><b>+998 91-774-62-62</b></p>
+                                <p><b>+998 91-774-62-61</b></p>
                             </div>
                         </Container.TopSecitons>
                     </Container.Left>
