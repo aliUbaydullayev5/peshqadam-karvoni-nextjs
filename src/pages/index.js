@@ -1,13 +1,25 @@
 import Head from "next/head"
-import Navbar from "@/components/Navbar";
-import StartCom from "@/components/homaPageComponents/StartCom"
 import "swiper/css"
 import "swiper/css/pagination"
-import YonalishlarCom from "@/components/homaPageComponents/YonalishlarCom"
-import YangiliklarCom from "@/components/homaPageComponents/YangiliklarCom";
+import StartComponent from "@/components/StartComponent"
+import YonalishlarComponent from "@/components/YonalishlarComponent";
+import styled from "styled-components";
+import BannerComponent from "@/components/BannerComponent";
+import BannerBottomComponent from "@/components/BannerBottomComponent";
+import YangiliklarComponent from "@/components/YangiliklarComponent";
+import VideoBolimComponent from "@/components/VideoBolimComponent";
+import BizningHamkorComponent from "@/components/BizningHamkorComponent";
+import BackImgComponent from "@/components/BackImgComponent";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+
+    const Container = styled.main`
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    `
+
     return (
         <>
             <Head>
@@ -27,14 +39,17 @@ const Index = () => {
                 <meta http-equiv="refresh" content="30"/>
                 <title>Peshqadam karvoni</title>
             </Head>
-            <main>
-                <Navbar>
-                    <StartCom />
-                    <YonalishlarCom />
-                    <YangiliklarCom />
-                </Navbar>
+            <Container>
+                <StartComponent />
+                <YonalishlarComponent />
+                <BannerComponent />
+                <BannerBottomComponent />
+                <YangiliklarComponent />
+                <VideoBolimComponent />
+                <BizningHamkorComponent />
+                <BackImgComponent />
                 <Footer />
-            </main>
+            </Container>
         </>
     );
 }

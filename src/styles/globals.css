@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
   margin: 0;
@@ -7,10 +7,10 @@
 }
 body {
   margin: 0;
-  padding: 67px 0 0 0;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 span, p, h1, h2, h3, h4, h5, h6{
   padding: 0 !important;
@@ -18,23 +18,14 @@ span, p, h1, h2, h3, h4, h5, h6{
   box-sizing: border-box !important;
 }
 :root{
-  --mainPadding: 144px;
+  --mainPadding: 10vw;
 }
-@media (width < 1250px){
+@media (width < 800px){
   :root{
-    --mainPadding: 100px;
+    --mainPadding: 0;
   }
 }
-@media (width < 1150px){
-  :root{
-    --mainPadding: 50px;
-  }
-}
-@media (width < 1000px){
-  :root{
-    --mainPadding: 10px;
-  }
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -43,7 +34,6 @@ code {
 .nocopy {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;

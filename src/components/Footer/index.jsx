@@ -1,78 +1,51 @@
 import React from 'react'
 import Container from './style'
-import img from '../../assets/png/big_logo.png'
-import {HiOutlinePhone} from "react-icons/hi"
-import {SiTelegram} from "react-icons/si"
-import {RiInstagramFill} from "react-icons/ri"
-import {FaFacebook} from "react-icons/fa"
-import {ImLocation} from "react-icons/im"
-import {BsYoutube} from "react-icons/bs"
-import Image from "next/image";
-
+import Svg21 from '../../assets/svg/img21.svg'
+import Svg22 from '../../assets/svg/img22.svg'
+import Svg23 from '../../assets/svg/img23.svg'
+import Svg24 from '../../assets/svg/img24.svg'
+import {AiOutlineArrowUp} from "react-icons/ai"
 
 const Footer = () => {
-    return (
+
+    function scrollToTop(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    return(
         <Container>
-            <Container.Inset>
-
-                <Container.Top>
-                    <Container.Left>
-                        <Container.TopSecitons>
-
-                            <div className={'iconArea'}>
-                                <ImLocation className={'icon pointer'}/>
-                            </div>
-                            <div>
-                                <h3>Manzil</h3>
-                                <p><b>Karimov St, Tashkent, Uzbekistan</b></p>
-                            </div>
-
-                        </Container.TopSecitons>
-
-                        <Container.TopSecitons>
-                            <div className={'iconArea'}>
-                                <HiOutlinePhone className={'icon pointer'}/>
-                            </div>
-                            <div>
-                                <h3>Telefon</h3>
-                                <p><b>+998 91-774-62-62</b></p>
-                            </div>
-                        </Container.TopSecitons>
-                    </Container.Left>
-
-                    <Container.Right>
-                        <Container.Messengers>
-                            <a href={'https://t.me/peshqadam_karvoni'} target={'_blank'}>
-                                <SiTelegram className={'pointer icon'} size={'60px'}/>
-                            </a>
-                            <a href={'https://www.instagram.com/peshqadam_karvoni/?igshid=MDM4ZDc5MmU%3D'}
-                               target={'_blank'}>
-                                <RiInstagramFill className={'pointer icon'} size={'70px'}/>
-                                <span></span>
-                            </a>
-                            <a href={'https://www.facebook.com/PeshqadamKarvoni?mibextid=ZbWKwL'} target={'_blank'}>
-                                <FaFacebook className={'pointer icon'} size={'60px'}/>
-                            </a>
-                            <a href={'https://youtube.com/@peshqadamkarvoni'} target={'_blank'}>
-                                <BsYoutube className={'pointer icon'} size={'70px'}/>
-                            </a>
-                        </Container.Messengers>
-                        <Container.Map>
-                            <a href={'https://www.google.com/maps/place/41°22\'54.6%22N+69°13\'33.7%22E/@41.382493,69.2216449,16z/data=!4m4!3m3!8m2!3d41.381841!4d69.226033'} target={'_blank'}>
-                                <div>
-
-                                </div>
-                            </a>
-                        </Container.Map>
-                    </Container.Right>
-                </Container.Top>
-
-                <Container.Bottom>
-                    <Image src={img} alt="logo"/>
-                </Container.Bottom>
-            </Container.Inset>
+            <div className="left">
+                <p className="text">Biz haqimizda</p>
+                <p className="text">Yo‘nalishlar</p>
+                <p className="text">Yangiliklar</p>
+                <p className="text">Kontakt</p>
+                <p className="text">Hamkorlar</p>
+            </div>
+            <div className="right">
+                <p className="rightText">Tadbirlar va boshqa yangiliklar haqida birinchilardan bo'lib xabardor bo'lish uchun ijtimoiy tarmoqlarda bizga obuna bo'ling.</p>
+                <div className="rightSvgBlock">
+                    <div className="roundBlockSvg">
+                        <Svg21 />
+                    </div>
+                    <div className="roundBlockSvg">
+                        <Svg22 />
+                    </div>
+                    <div className="roundBlockSvg">
+                        <Svg23 />
+                    </div>
+                    <div className="roundBlockSvg">
+                        <Svg24 />
+                    </div>
+                </div>
+            </div>
+            <div className="bottom">
+                <p className="title">© 2022, «Peshqadam karvoni». Barcha huquqlar himoyalangan.</p>
+            </div>
+            <div className="bottomBottom" onClick={()=> scrollToTop()}>
+                <AiOutlineArrowUp size={'22px'} />
+            </div>
         </Container>
-    );
+    )
 }
 
 export default Footer
