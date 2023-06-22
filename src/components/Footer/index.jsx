@@ -8,7 +8,7 @@ import {AiOutlineArrowUp} from "react-icons/ai"
 
 const Footer = () => {
 
-    function scrollToTop(){
+    const scrollToTop = () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
@@ -22,7 +22,7 @@ const Footer = () => {
                 <p className="text">Hamkorlar</p>
             </div>
             <div className="right">
-                <p className="rightText">Tadbirlar va boshqa yangiliklar haqida birinchilardan bo'lib xabardor bo'lish uchun ijtimoiy tarmoqlarda bizga obuna bo'ling.</p>
+                <p className="rightText">Tadbirlar va boshqa yangiliklar haqida birinchilardan bo`lib xabardor bo`lish uchun ijtimoiy tarmoqlarda bizga obuna bo`ling.</p>
                 <div className="rightSvgBlock">
                     <div className="roundBlockSvg">
                         <Svg21 />
