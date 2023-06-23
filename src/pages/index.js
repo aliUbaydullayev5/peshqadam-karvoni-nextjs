@@ -2,15 +2,15 @@ import Head from "next/head"
 import "swiper/css"
 import "swiper/css/pagination"
 import StartComponent from "@/components/StartComponent"
-import YonalishlarComponent from "@/components/YonalishlarComponent";
-import styled from "styled-components";
-import BannerComponent from "@/components/BannerComponent";
-import BannerBottomComponent from "@/components/BannerBottomComponent";
-import YangiliklarComponent from "@/components/YangiliklarComponent";
-import VideoBolimComponent from "@/components/VideoBolimComponent";
-import BizningHamkorComponent from "@/components/BizningHamkorComponent";
-import BackImgComponent from "@/components/BackImgComponent";
-import Footer from "@/components/Footer";
+import YonalishlarComponent from "@/components/YonalishlarComponent"
+import styled from "styled-components"
+import BannerComponent from "@/components/BannerComponent"
+import BannerBottomComponent from "@/components/BannerBottomComponent"
+import YangiliklarComponent from "@/components/YangiliklarComponent"
+import VideoBolimComponent from "@/components/VideoBolimComponent"
+import BizningHamkorComponent from "@/components/BizningHamkorComponent"
+import BackImgComponent from "@/components/BackImgComponent"
+import Footer from "@/components/Footer"
 
 const Index = () => {
 
@@ -41,14 +41,14 @@ const Index = () => {
             </Head>
             <Container>
                 <StartComponent />
-                <YonalishlarComponent />
-                <BannerComponent />
-                <BannerBottomComponent />
-                <YangiliklarComponent />
-                <VideoBolimComponent />
-                <BizningHamkorComponent />
-                <BackImgComponent />
-                <Footer />
+                {/*<YonalishlarComponent />*/}
+                {/*<BannerComponent />*/}
+                {/*<BannerBottomComponent />*/}
+                {/*<YangiliklarComponent />*/}
+                {/*<VideoBolimComponent />*/}
+                {/*<BizningHamkorComponent />*/}
+                {/*<BackImgComponent />*/}
+                {/*<Footer />*/}
             </Container>
         </>
     );
