@@ -74,6 +74,18 @@ const Container = styled.div`
     justify-content: center;
     cursor: pointer;
   }
+  @media only screen and (width < 800px) {
+    padding: 10px 20px 100px 20px;
+    .left{
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .bottom{
+      margin: 0;
+    }
+  }
 `
 
 export default Container

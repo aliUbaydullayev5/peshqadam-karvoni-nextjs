@@ -46,9 +46,9 @@ const Index = () => {
                 <BannerBottomComponent />
                 <YangiliklarComponent />
                 <VideoBolimComponent />
-                {/*<BizningHamkorComponent />*/}
-                {/*<BackImgComponent />*/}
-                {/*<Footer />*/}
+                <BizningHamkorComponent />
+                <BackImgComponent />
+                <Footer />
             </Container>
         </>
     );

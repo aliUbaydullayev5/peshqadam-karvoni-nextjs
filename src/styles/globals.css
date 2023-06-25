@@ -22,7 +22,7 @@ span, p, h1, h2, h3, h4, h5, h6{
 }
 @media (width < 800px){
   :root{
-    --mainPadding: 0px;
+    --mainPadding: 20px;
   }
 }
 

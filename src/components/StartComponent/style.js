@@ -111,6 +111,7 @@ Container.Icon = styled.div`
 Container.Hamburger = styled.div`
   position: relative;
   display: none;
+  right: 20px;
   @media only screen and (width < 800px) {
     display: block;
   }

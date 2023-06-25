@@ -5,6 +5,7 @@ const Container = styled.div`
   padding: 0 var(--mainPadding);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
   .title{
     color: #162022;
@@ -20,8 +21,14 @@ const Container = styled.div`
   }
   .logo{
     transition: .2s;
+    margin: 20px;
     :hover{
       transform: scale(1.1);
+    }
+  }
+  @media only screen and (width < 800px) {
+    .container{
+      justify-content: center;
     }
   }
 `

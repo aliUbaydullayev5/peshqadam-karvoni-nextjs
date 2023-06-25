@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   padding: 0 var(--mainPadding);
-  height: 400px;
-  
 `
 Container.Inset = styled.div`
   
@@ -19,6 +17,9 @@ Container.SectionContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @media only screen and (width < 800px) {
+    justify-content: center !important;
+  }
 `
 Container.Section = styled.div`
   width: 360px;
