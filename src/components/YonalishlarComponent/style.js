@@ -19,6 +19,9 @@ const Container = styled.div`
     color: #FDFDFD;
     max-width: 965px;
   }
+  @media only screen and (width < 800px) {
+    padding: 111px 20px !important;
+  }
 `
 Container.Inset = styled.div`
   height: 100%;
@@ -32,7 +35,9 @@ Container.Inset = styled.div`
   @media only screen and (width < 600px) {
     gap: 20px;
   }
+
 `
+
 const Section = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;

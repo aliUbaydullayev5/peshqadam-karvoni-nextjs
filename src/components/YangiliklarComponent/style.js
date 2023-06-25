@@ -22,6 +22,8 @@ Container.Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 95%;
+  margin: auto;
   .data{
     font-size: 14px;
     line-height: 31px;
@@ -52,8 +54,11 @@ Container.Card = styled.div`
   }
 `
 Container.ImageBack = styled.div`
-  background-image: url(${({src})=> src && src.src});
-  height: 260px;
+   background-image: url(${({img})=> img && img.src});
+   height: 260px;
+   width: 90%;
+   margin: auto;
+  
 `
 
 export default Container

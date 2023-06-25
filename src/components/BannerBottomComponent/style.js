@@ -83,6 +83,10 @@ Container.BottomSection = styled.div`
     flex-direction: column;
     height: 900px;
     gap: 50px;
+    .right{
+      min-width: 300px;
+      padding: 20px;
+    }
   }
 `
 Container.BottomLeftBackImg = styled.div`
@@ -93,9 +97,9 @@ Container.BottomLeftBackImg = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //@media only screen and (width < 800px) {
-  //  min-height: 300px;
-  //}
+  @media only screen and (width < 800px) {
+    min-width: 300px;
+  }
 `
 Container.Line = styled.div`
   width: 100%;

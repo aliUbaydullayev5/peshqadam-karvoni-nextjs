@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 const BannerComponent = () => {
     return(
-        <Container style={{border: '1px solid red'}}>
+        <Container>
             <div className="left">
                 <div className="title">Ushbu yo‘nalishlardan qaysi biri sizga ma‘qul keidi?</div>
                 <div className="desc">O‘z qobiliyatingiz bilan jamiyat rivojiga hissa qo‘shing, Peshqadamlar karvoniga qo‘shilish uchun ro‘yhatdan o‘ting!</div>

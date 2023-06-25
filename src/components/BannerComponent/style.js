@@ -26,7 +26,7 @@ const Container = styled.div`
     
   }
   @media only screen and (width < 800px) {
-    
+    padding: 50px 20px;
   }
 `
 

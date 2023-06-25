@@ -12,7 +12,7 @@ const YangiliklarComponent = () => {
                 {
                     data.map(({id, title, data, desc, img})=> (
                         <Container.Card key={id}>
-                            <Container.ImageBack src={img} />
+                            <Container.ImageBack img={img} />
                             <p className="data">{data}</p>
                             <p className="title">{title}</p>
                             <p className="desc">{desc}</p>
