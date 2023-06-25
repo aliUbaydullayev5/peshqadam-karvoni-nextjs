@@ -26,7 +26,17 @@ Container.TopSection = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 300px;
     
+  }
+  @media only screen and (width < 800px) {
+    display: block;
+    .titleBlock{
+      padding: 10px;
+    }
+    .title{
+      font-size: 24px;
+    }
   }
 `
 Container.BottomSection = styled.div`
@@ -67,6 +77,13 @@ Container.BottomSection = styled.div`
     line-height: 150%;
     color: #FDFDFD;
   }
+  @media only screen and (width < 800px) {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    gap: 50px;
+  }
 `
 Container.BottomLeftBackImg = styled.div`
   width: 100%;
@@ -76,6 +93,9 @@ Container.BottomLeftBackImg = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  //@media only screen and (width < 800px) {
+  //  min-height: 300px;
+  //}
 `
 Container.Line = styled.div`
   width: 100%;

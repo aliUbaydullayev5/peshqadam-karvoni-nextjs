@@ -14,7 +14,7 @@ const YonalishlarComponent = () => {
             <Container.Inset>
                 {
                     data.map(({id, title, desc, img, position}, index)=> (
-                        <Section key={id} position={position}>
+                        <Section key={id} position={position} index={index}>
                             <div className="imgBlock">
                                 <Image src={img} alt={title} className={'img'} />
                             </div>

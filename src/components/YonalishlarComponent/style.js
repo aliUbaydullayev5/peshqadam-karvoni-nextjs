@@ -22,14 +22,23 @@ const Container = styled.div`
 `
 Container.Inset = styled.div`
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media only screen and (width < 800px) {
+    justify-content: center;
+  }
+  @media only screen and (width < 600px) {
+    gap: 20px;
+  }
 `
 const Section = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  width: 50%;
+  min-width: 550px;
   .imgBlock {
     grid-column: ${({position}) => position === 'left' ? '1/2' : '2/3'};
     grid-row: 1/2;
@@ -69,6 +78,37 @@ const Section = styled.div`
     transition: 0.2s;
     :hover{
       gap: 20px;
+    }
+  }
+  
+  @media only screen and (width < 1370px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    width: 50%;
+    min-width: 550px;
+    .imgBlock {
+      grid-column: ${({index}) => index % 2 === 0 ? '1/2' : '2/3'};
+      grid-row: 1/2;
+    }
+  }
+  @media only screen and (width < 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    width: 50%;
+    min-width: 350px;
+    .imgBlock {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .textBlock {
+      padding: 40px 30px;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
   }
 `

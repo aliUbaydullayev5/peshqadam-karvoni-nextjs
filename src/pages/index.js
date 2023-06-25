@@ -41,11 +41,11 @@ const Index = () => {
             </Head>
             <Container>
                 <StartComponent />
-                {/*<YonalishlarComponent />*/}
-                {/*<BannerComponent />*/}
-                {/*<BannerBottomComponent />*/}
-                {/*<YangiliklarComponent />*/}
-                {/*<VideoBolimComponent />*/}
+                <YonalishlarComponent />
+                <BannerComponent />
+                <BannerBottomComponent />
+                <YangiliklarComponent />
+                <VideoBolimComponent />
                 {/*<BizningHamkorComponent />*/}
                 {/*<BackImgComponent />*/}
                 {/*<Footer />*/}

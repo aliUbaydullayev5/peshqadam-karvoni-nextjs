@@ -5,6 +5,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @media only screen and (width < 800px) {
+    gap: 0;
+  }
   
 `
 
@@ -14,7 +17,6 @@ Container.LogoSection = styled.div`
   justify-content: center;
   padding: 23px 0;
   position: relative;
-  border: 1px solid red; 
   
 `
 Container.MainContent = styled.div`
@@ -66,23 +68,30 @@ Container.MainContent = styled.div`
   }
 
   @media only screen and (width < 1200px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: block;
+    //grid-template-columns: 1fr;
+    //grid-template-rows: 1fr 1fr;
     .left{
       border: 0 !important;
       padding: 20px;
     }
   }
+  
   @media only screen and (width < 800px) {
     .right{
-      border: 1px solid red;
       gap: 0;
       grid-template-rows: 1fr;
       .top{
         display: none;
       }
-      .imgSection{
-      }
+    }
+    .title{
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 45px;
+    }
+    .description{
+      font-size: 16px;
     }
   }
   
@@ -104,6 +113,29 @@ Container.Hamburger = styled.div`
   display: none;
   @media only screen and (width < 800px) {
     display: block;
+  }
+  .closeIcon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+`
+Container.Menu = styled.div`
+  padding: 60px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.78);
+
+`
+Container.MenuItem = styled.div`
+  color: white;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 24px;
+  :hover{
+    margin: 20px 0 20px 10px;
   }
 `
 

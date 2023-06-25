@@ -14,6 +14,9 @@ Container.Inset = styled.div`
   grid-template-columns: repeat(auto-fill, 400px);
   justify-content: space-between;
   gap: 40px;
+  @media only screen and (width < 800px) {
+    justify-content: center;
+  }
 `
 Container.Card = styled.div`
   display: flex;

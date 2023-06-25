@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  border: 1px solid red;
   padding: 50px var(--mainPadding);
   background: #02926C;
   display: flex;
@@ -24,6 +23,9 @@ const Container = styled.div`
     }
   }
   .right{
+    
+  }
+  @media only screen and (width < 800px) {
     
   }
 `

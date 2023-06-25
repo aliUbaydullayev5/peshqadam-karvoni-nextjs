@@ -6,6 +6,7 @@ import camelImg from '../../assets/png/camelImg.png'
 import Image from "next/image"
 import {pushRotate as Menu} from 'react-burger-menu'
 import {AiOutlineMenu} from "react-icons/ai"
+import {MdOutlineClose} from "react-icons/md"
 
 const StartComponent = () => {
 
@@ -14,16 +15,19 @@ const StartComponent = () => {
     return (
         <Container>
             <Container.Hamburger>
-                <Menu isOpen={hamburget} left={true} width={'100%'} >
-                    <p onClick={() => setHamburger(!hamburget)} id="home" className="menu-item">Home</p>
-                    <p id="about" className="menu-item">About</p>
-                    <p id="contact" className="menu-item">Contact</p>
-                    <p className="menu-item--small">Settings</p>
+                <Menu isOpen={hamburget} left={true} width={'100%'}>
+                    <Container.Menu>
+                        <Container.MenuItem>Section-1</Container.MenuItem>
+                        <Container.MenuItem>Section-2</Container.MenuItem>
+                        <Container.MenuItem>Section-3</Container.MenuItem>
+                        <Container.MenuItem>Section-4</Container.MenuItem>
+                    </Container.Menu>
+                    <MdOutlineClose onClick={() => setHamburger(!hamburget)} size={'45px'} color={'white'} className={'closeIcon'} />
                 </Menu>
             </Container.Hamburger>
             <Container.LogoSection>
                 <Container.Icon onClick={()=> setHamburger(!hamburget)}>
-                    <AiOutlineMenu size={30} />
+                    <AiOutlineMenu size={'40px'} />
                 </Container.Icon>
                 <Logo className={'pointer'}/>
             </Container.LogoSection>

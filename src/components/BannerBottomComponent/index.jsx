@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './style'
 import Button from "@/components/Button"
 import {HiOutlineArrowRight} from "react-icons/hi"
+import Image from "next/image";
 const BannerBottomComponent = () => {
     return(
         <Container>
@@ -10,7 +11,7 @@ const BannerBottomComponent = () => {
                     <p className="title">BUGUN KITOB O‘QIGAN ODAM KЕCHAGI ODAM EMAS</p>
                 </div>
                 <div className={'imgBlock'}>
-                    {/*<Image src={img7} alt={'img do not important'}/>*/}
+
                 </div>
             </Container.TopSection>
             <Container.BottomSection>
